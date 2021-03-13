@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+    </head>
+    <body>
+        <main>
+            <form action="formularios.php" method="POST">
+                <label for="nombre">
+                    <span>Nombre</span>
+                    <input type="text" name="nombre" id="nombre">
+                </label>
+                <label for="edad">
+                    <span>Edad</span>
+                    <input type="number" name="edad" id="edad">
+                </label>
+                <span>Idiomas</span>
+                <input list="idiomas" name="idiomas">
+                <datalist id="idiomas">
+                    <option value="Italiano"></option>
+                    <option value="Ingles"></option>
+                    <option value="Frances"></option>
+                </datalist>
+                <br><br><br>
+                <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Escriba aquí su descargo"></textarea>
+                <br>
+                <input type="radio" id="casadox" name="estado" value="casadx">
+                <label for="casadx">Casadx</label>
+                <input type="radio" id="solterx" name="estado" value="solterx">
+                <label for="solterx">Solterx</label> <br>
+                <label>
+                    <input type="checkbox" name="cbox" value="Acepta los terminos y condiciones">
+                    Acepta los términos y condiciones.
+                </label>
+                <br>
+     
+                <input type="submit">
+            </form>
+        </main>
+    </body>
+</html>
